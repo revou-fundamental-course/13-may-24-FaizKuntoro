@@ -13,23 +13,42 @@
     </div>
 
     <div>
-        <img src="assets/img/segitiga.jpg" alt="" class="gambar">
+        <img src="assets/img/segitiga.jpg" alt="Gambar Segitiga" class="gambar">
     </div>
 
     <section>
-        <form id="triangle-form">
-            <label for="alas">Alas:</label>
-            <input type="number" id="alas" name="alas" required>
+        <form id="triangle-form-luas">
+            <h2>Luas</h2>
+            <label for="alas-luas">Alas:</label>
+            <input type="number" id="alas-luas" name="alas" required>
             <br>
-            <label for="tinggi">Tinggi:</label>
-            <input type="number" id="tinggi" name="tinggi" required>
+            <label for="tinggi-luas">Tinggi:</label>
+            <input type="number" id="tinggi-luas" name="tinggi" required>
             <br>
-            <button class="hitung" type="button" onclick="hitung()">Hitung</button>
+            <button class="hitung" type="button" onclick="hitungLuas()">Hitung</button>
 
             <h2 id="result-luas">Luas: 0</h2>
+
+            <button id="reset-luas" type="button" onclick="resetFormLuas()">Reset</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="triangle-form-keliling">
+            <h2>Keliling</h2>
+            <label for="sisiA">SisiA:</label>
+            <input type="number" id="sisiA" name="sisiA" required>
+            <br>
+            <label for="sisiB">SisiB:</label>
+            <input type="number" id="sisiB" name="sisiB" required>
+            <br>
+            <label for="sisiC">SisiC:</label>
+            <input type="number" id="sisiC" name="sisiC" required>
+            <br>
+            <button class="hitung" type="button" onclick="hitungKeliling()">Hitung</button>
             <h2 id="result-keliling">Keliling: 0</h2>
 
-            <button id="reset" type="button" onclick="resetForm()">Reset</button>
+            <button id="reset-keliling" type="button" onclick="resetFormKeliling()">Reset</button>
         </form>
     </section>
 
@@ -37,6 +56,5 @@
         <h1>Made By Faiz</h1>
     </div>
 
-    
 </body>
 </html>

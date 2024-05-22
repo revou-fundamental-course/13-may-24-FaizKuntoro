@@ -1,6 +1,6 @@
-function hitung() {
-  const alas = parseFloat(document.getElementById('alas').value);
-  const tinggi = parseFloat(document.getElementById('tinggi').value);
+function hitungLuas() {
+  const alas = parseFloat(document.getElementById('alas-luas').value);
+  const tinggi = parseFloat(document.getElementById('tinggi-luas').value);
   
   if (isNaN(alas) || isNaN(tinggi) || alas <= 0 || tinggi <= 0) {
     alert('Harap masukkan nilai alas dan tinggi yang valid.');
@@ -8,16 +8,34 @@ function hitung() {
   }
 
   const luas = 0.5 * alas * tinggi;
-  const hypotenuse = Math.sqrt(Math.pow(tinggi, 2) + Math.pow(alas, 2));
-  const keliling = tinggi + alas + hypotenuse
 
   document.getElementById('result-luas').innerHTML = `Luas: ${luas}`;
-  document.getElementById('result-keliling').innerHTML = `Warning: ${keliling}`;
 }
 
-function resetForm() {
-  document.getElementById('alas').value = '';
-  document.getElementById('tinggi').value = '';
+function hitungKeliling() {
+  const sisiA = parseFloat(document.getElementById('sisiA').value);
+  const sisiB = parseFloat(document.getElementById('sisiB').value);
+  const sisiC = parseFloat(document.getElementById('sisiC').value);
+  
+  if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC) || sisiA <= 0 || sisiB <= 0 || sisiC <= 0) {
+    alert('Harap masukkan nilai sisi yang valid.');
+    return;
+  }
+
+  const keliling = sisiA + sisiB + sisiC;
+
+  document.getElementById('result-keliling').innerHTML = `Keliling: ${keliling}`;
+}
+
+function resetFormLuas() {
+  document.getElementById('alas-luas').value = '';
+  document.getElementById('tinggi-luas').value = '';
   document.getElementById('result-luas').innerHTML = `Luas: 0`;
+}
+
+function resetFormKeliling() {
+  document.getElementById('sisiA').value = '';
+  document.getElementById('sisiB').value = '';
+  document.getElementById('sisiC').value = '';
   document.getElementById('result-keliling').innerHTML = `Keliling: 0`;
 }

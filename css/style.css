@@ -1,98 +1,96 @@
-
 body {
-
-  background-color:rgb(235, 235, 235) ;
-
+  background-color: rgb(235, 235, 235);
   margin: 0;
-    font-family: sans-serif;
-  }
+  font-family: sans-serif;
+}
 
-  h1{
-    margin: 0;
-    padding: 1rem;
-    color: aliceblue;
-   
-  }
+h1 {
+  margin: 0;
+  padding: 1rem;
+  color: aliceblue;
+}
 
-  h2{
-    text-align: left;
-    padding: 0rem;
-    margin: 0.5rem;
-  }
+h2 {
+  text-align: left;
+  padding: 0;
+  margin: 0.5rem;
+}
 
-  form {
-    text-align: center;
-    margin: 0  auto;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 50rem;
-    padding: 2rem;
+form {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 50rem;
+  padding: 2rem;
+}
 
-    #result {
-      font-style: italic;
-      margin-top: 10px;
-    }
-  
-    #tinggi, #alas{
-      border-radius: 10px;
-      font-size: 1.5rem;
-    }
-    .hitung{
-      border-radius: 10px;
-      font-size: 1.5rem;
-      width: 10rem;
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-    }
-  
-    #reset{
-      border-radius: 10px;
-      font-size: 1.5rem;
-      width: 10rem;
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-    }
+form #result {
+  font-style: italic;
+  margin-top: 10px;
+}
 
-    
-  }
+form input[type="number"] {
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
 
-  section{
-    margin: 0 auto;
-    background-color: rgb(243, 243, 243);
-    width: 60rem;
-    border-radius: 2rem;
-    border-style: solid;
-    margin-top: 1rem;
-  }
-  
-  label {
-    font-weight: bold;
-  }
+.hitung {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 10rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 
-  .header{
-    margin: 0;
-    background-color: rgb(0, 0, 0);
-    padding: 200;
-  }
+#reset-luas, #reset-keliling {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 10rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 
-  .footer{
-    margin: 0;
-    background-color: rgb(0, 0, 0);
-    padding: 200;
-    margin-top: 5rem;
-  }
+section {
+  margin: 0 auto;
+  background-color: rgb(243, 243, 243);
+  width: 60rem;
+  border-radius: 2rem;
+  border-style: solid;
+  margin-top: 1rem;
+}
 
-  .gambar{
-    margin: 0 auto;
-    display: flex;
-    margin-top: 5rem ;
-    justify-content: center;
-    border-radius: 2rem;
-    border-color: rgb(235, 235, 235);
-    border-style: solid;
-  }
+label {
+  font-weight: bold;
+}
 
-  
-  
+.header {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.gambar {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  border-radius: 2rem;
+  border-color: rgb(235, 235, 235);
+  border-style: solid;
+  width: 100%;
+  max-width: 30rem;
+}
+
